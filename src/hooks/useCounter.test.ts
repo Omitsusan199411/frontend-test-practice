@@ -1,5 +1,5 @@
 import { render, screen, renderHook, act } from "@testing-library/react"
-import { useCounter } from "./useCounter"
+import { useCounter } from "@/hooks/useCounter"
 
 describe("useCounter", () => {
 	test("should render the initial count", () => {

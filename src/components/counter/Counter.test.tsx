@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import Counter from "./Counter"
+import Counter from "@/components/counter/Counter"
 import userEvent from "@testing-library/user-event"
 
 describe("Counter", () => {
