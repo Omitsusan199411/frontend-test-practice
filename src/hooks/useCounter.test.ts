@@ -8,7 +8,7 @@ describe('useCounter', () => {
         expect(result.current.count).toBe(0)
     })
 
-    test('Initail Count test', () => {
+    test('Initial Count test', () => {
         const { result } = renderHook(useCounter, {
             initialProps: {
                 initialCount: 10, // renderHook内にセットしたカスタムhooksに初期引数を渡す
