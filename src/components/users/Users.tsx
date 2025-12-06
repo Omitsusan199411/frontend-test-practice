@@ -15,7 +15,7 @@ const Users = () => {
                 setUsers(data.map((user: { name: string }) => user.name))
             })
             .catch((error) => {
-                setError("Error")
+                setError('Error')
             })
     }, [])
 

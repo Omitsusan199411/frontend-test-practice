@@ -1,33 +1,31 @@
 import React, { useState, useEffect } from 'react'
-import { SkillProps } from "./Skills.types";
+import { SkillProps } from './Skills.types'
 
-export const Skills = (props: SkillProps ) => {
-	const { skills } = props
-	const [isLoggin, setIsLoggin] = useState(false);
+export const Skills = (props: SkillProps) => {
+    const { skills } = props
+    const [isLoggin, setIsLoggin] = useState(false)
 
-	useEffect(() => {
-		setTimeout(() => {
-			setIsLoggin(true);
-		}, 500);
-	},[])
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoggin(true)
+        }, 500)
+    }, [])
 
-	return (
-		<div>
-			<p>skills</p>
-			<ul>
-				{skills.map((skill) => (
-					<li key={skill}>{skill}</li>
-				))}
-			</ul>
-			{
-				isLoggin ? (
-					<button onClick={() => setIsLoggin(false)}>ログアウト</button>
-				) : (
-					<button onClick={() => setIsLoggin(true)}>ログイン</button>
-				)
-			}
-		</div>
-	)
+    return (
+        <div>
+            <p>skills</p>
+            <ul>
+                {skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                ))}
+            </ul>
+            {isLoggin ? (
+                <button onClick={() => setIsLoggin(false)}>ログアウト</button>
+            ) : (
+                <button onClick={() => setIsLoggin(true)}>ログイン</button>
+            )}
+        </div>
+    )
 }
 
-export default Skills;
+export default Skills
