@@ -25,8 +25,7 @@
     "coverage": "npm test -- --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}'",
     "format": "prettier --write src",
     "lint": "eslint src",
-    "prepare": "husky install",
-    "vitest": "vitest"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
